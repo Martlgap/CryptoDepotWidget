@@ -4,7 +4,7 @@ Showing your personal Crypto-Balances in a Widget!
 ## 🖥What it looks like
 ![Example Image](./widget_preview.png)
 
-## How to install
+## 🛠How to install
 ### iOS
 - Download the [Scriptable App](https://apps.apple.com/de/app/scriptable/id1405459188).
 - Open Scriptable and open a new Script (+Button in the top-right corner).
