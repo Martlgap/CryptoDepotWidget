@@ -1,10 +1,18 @@
 # CryptoWidget
 Showing your personal Crypto-Balances in a Widget!
 
-## 🖥What it looks like
+[![Last Commit](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)
+[![License](https://img.shields.io/badge/license-CC0-blue)](https://img.shields.io/badge/license-CC0-blue)
+[![Downloads](https://img.shields.io/github/downloads/Martlgap/CryptoWidget/total)](https://img.shields.io/github/downloads/Martlgap/CryptoWidget/total)
+[![License](https://img.shields.io/badge/plugin-scriptable-blue)](https://img.shields.io/badge/plugin-scriptable-blue)
+
+## 📗 Description
+A JavaScript to create your own Widget in the Scriptable App, which shows your balances in cryptocoins. It uses the [CoinMarketCap](https://coinmarketcap.com) API to retrieve current prices for the currencies. 
+
+## 🖥 What it looks like
 ![Example Image](./widget_preview.png)
 
-## 🛠How to install
+## 🛠 How to install
 ### iOS
 - Download the [Scriptable App](https://apps.apple.com/de/app/scriptable/id1405459188).
 - Open Scriptable and open a new Script (+Button in the top-right corner).
@@ -18,7 +26,7 @@ Showing your personal Crypto-Balances in a Widget!
 ### Android
 TODO
 
-## 🍼How to feed your balances to the Widget
+## 🍼 How to feed your balances to the Widget
 Copy&Paste a JSON formated string into the Parameter-Field of your Widget.
 For example:
 ```json
