@@ -30,5 +30,5 @@ TODO
 Copy&Paste a JSON formated string into the Parameter-Field of your Widget.
 For example:
 ```json
-{"Currency":"BTC", "Amount":"0.0999", "Invest":"999"}
+[{"Currency":"BTC", "Amount":"0.0999", "Invest":"999"}]
 ```
