@@ -1,4 +1,4 @@
-# CryptoWidget
+# CryptoDepotWidget
 A JavaScript for Scriptable, showing your personal crypto-balances in a widget!
 
 [![Last Commit](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)
