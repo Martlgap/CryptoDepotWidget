@@ -3,14 +3,15 @@ A JavaScript for Scriptable, showing your personal crypto-balances in a widget!
 
 [![Last Commit](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)
 [![License](https://img.shields.io/badge/license-CC0-blue)](https://img.shields.io/badge/license-CC0-blue)
-[![Downloads](https://img.shields.io/github/downloads/Martlgap/CryptoWidget/total)](https://img.shields.io/github/downloads/Martlgap/CryptoWidget/total)
+[![Version](https://img.shields.io/badge/version-0.1-purple)](https://img.shields.io/badge/version-0.1-purple)
 [![License](https://img.shields.io/badge/plugin-scriptable-blue)](https://img.shields.io/badge/plugin-scriptable-blue)
 
 ## 📗 Description
-A JavaScript to create your own widget in the Scriptable App, which shows your balances in cryptocoins. It uses the [CoinMarketCap](https://coinmarketcap.com) API to retrieve current prices for the currencies. 
+A JavaScript to create your own widget in the [Scriptable App](https://scriptable.app/), which shows your balances in cryptocoins. It uses the [CoinMarketCap](https://coinmarketcap.com) API to retrieve current prices for the currencies. 
+You can feed it with your personal balances of multiple coins. Have your depot always on screen!
 
 ## 🖥 What it looks like
-![Example Image](./widget_preview.png)
+![Example Image](./widget_preview.jpg)
 
 ## 🛠 How to install
 ### iOS
@@ -35,8 +36,11 @@ For example:
 
 ## ☑️ TODOS
 - [ ] Create medium and large widgets
-- [ ] Add win/loss compared to last refresh
-- [ ] Add a refresh date
+- [x] Add win/loss compared to last refresh
+- [x] Add a refresh date
 - [ ] In large widget show all balances
 - [ ] In medium widget show TOP 3 balances
-- [ ] Add and highlight most profitable coin
+- [x] Add and highlight most profitable coin
+
+## 🔍 Find more widgets on
+[https://www.scriptables.de/](https://www.scriptables.de/)
