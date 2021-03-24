@@ -7,7 +7,7 @@ A JavaScript for Scriptable, showing your personal crypto-balances in a widget!
 [![License](https://img.shields.io/badge/plugin-scriptable-blue)](https://img.shields.io/badge/plugin-scriptable-blue)
 
 ## 📗 Description
-A JavaScript to create your own widget in the [Scriptable App](https://scriptable.app/), which shows your balances in cryptocoins. It uses the [CoinMarketCap](https://coinmarketcap.com) API to retrieve current prices for the currencies. 
+A JavaScript to create your own widget in the [Scriptable App](https://scriptable.app/), which shows your balances in cryptocoins. It uses the [CryptoCompare](https://cryptocompare.com) API to retrieve current prices for the currencies. 
 You can feed it with your personal balances of multiple coins. Have your depot always on screen!
 
 ## 🖥 What it looks like
