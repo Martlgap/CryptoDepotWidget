@@ -1,4 +1,4 @@
-// Version 0.1
+// Version 0.2
 // Author: Martin Knoche
 
 const USDorEUR = "EUR"  // Your preferred currency to show values EUR or USD
@@ -150,14 +150,16 @@ async function createWidget(data, totals) {
     list.setPadding(1, 1, 1, 1);
     list.backgroundColor = ENV.colors.bg;
 
-    let row_top = list.addStack();
+    let widgetContainer = list.addStack();
+
+    let row_top = widgetContainer.addStack();
     row_top.addSpacer(20);
     let top_text = row_top.addText('📈 Cryptos');
     top_text.font = ENV.fonts.top;
     top_text.textColor = ENV.colors.normal;
 
-    list.addSpacer(3);
-    let row_1 = list.addStack();
+    widgetContainer.addSpacer(3);
+    let row_1 = widgetContainer.addStack();
     row_1.layoutHorizontally();
     row_1.addSpacer(2);
     let col_1_row_1 = row_1.addStack();
@@ -171,8 +173,8 @@ async function createWidget(data, totals) {
     text_depot.textColor = ENV.colors.normal
 
 
-    list.addSpacer(3)
-    let row_2 = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_2 = widgetContainer.addStack();
     row_2.layoutHorizontally();
     row_2.addSpacer(2);
     let col_1_row_2 = row_2.addStack();
@@ -192,8 +194,8 @@ async function createWidget(data, totals) {
     text_total_last_profit_str.font = ENV.fonts.small
     text_total_last_profit_str.textColor = ENV.colors.normal
 
-    list.addSpacer(3)
-    let row_3 = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_3 = widgetContainer.addStack();
     row_3.layoutHorizontally();
     row_3.addSpacer(2);
     let col_1_row_3 = row_3.addStack();
@@ -218,8 +220,8 @@ async function createWidget(data, totals) {
     }
 
 
-    list.addSpacer(3)
-    let row_4 = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_4 = widgetContainer.addStack();
     row_4.layoutHorizontally();
     row_4.addSpacer(2);
     let col_1_row_4 = row_4.addStack();
@@ -233,8 +235,8 @@ async function createWidget(data, totals) {
     text_roi_str.textColor = ENV.colors.normal
 
 
-    list.addSpacer(3)
-    let row_5 = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_5 = widgetContainer.addStack();
     row_5.layoutHorizontally();
     row_5.addSpacer(2);
     let col_1_row_5 = row_5.addStack();
@@ -259,8 +261,8 @@ async function createWidget(data, totals) {
     }
 
 
-    list.addSpacer(3)
-    let row_6 = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_6 = widgetContainer.addStack();
     row_6.layoutHorizontally();
     row_6.addSpacer(2);
     let col_1_row_6 = row_6.addStack();
@@ -285,8 +287,8 @@ async function createWidget(data, totals) {
     }
 
 
-    list.addSpacer(3)
-    let row_bottom = list.addStack();
+    widgetContainer.addSpacer(3)
+    let row_bottom = widgetContainer.addStack();
     // Last updated timestamp
     row_bottom.addSpacer(20);
     let lastUpdateDateString = "🔄 : " + `${('' + date.getDate()).padStart(2, '0')}.${('' + (date.getMonth() + 1)).padStart(2, '0')}.${date.getFullYear()} ${('' + date.getHours()).padStart(2, '0')}:${('' + date.getMinutes()).padStart(2, '0')}`
