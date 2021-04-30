@@ -15,7 +15,7 @@ You can feed it with your personal balances of multiple coins. Have your depot a
 ## 🖥 Preview
 |Small|Medium|Large|
 --- | --- | ---
-|<img src="./preview_small.png" alt="Preview Widget Small" width="200" height="200"/>|<img src="./preview_medium.png" alt="Preview Widget Medium" width="400" height="200"/>|<img src="./preview_large.png" alt="Preview Widget Large" width="400" height="400"/>|
+|<img src="./preview_small.png" alt="Preview Widget Small" height="150"/>|<img src="./preview_medium.png" alt="Preview Widget Medium" height="150"/>|<img src="./preview_large.png" alt="Preview Widget Large" height="300"/>|
 
 
 ## 🛠 How to install
