@@ -40,7 +40,7 @@ const ENV = {// Define colors and other parameters:
     "spacing": 5, // SPACING BETWEEN LIST ITEMS IN LARGE WIDGET
     "headerspacing": 3, // SPACING BETWEEN HEADER AND LIST IN LARGE WIDGET
     "num_rows": 4, // HOW MANY COINS SHOULD BE DISPLAYED VERTICALLY IN MEDIUM WIDGET
-    "preview": "small" // PREVIEW OF WIDGET IN APP (SMALL, MEDIUM or LARGE)
+    "preview": "medium" // PREVIEW OF WIDGET IN APP (SMALL, MEDIUM or LARGE)
 }
 
 // Check if input is correct
@@ -307,7 +307,6 @@ async function createWidget(data, total) {
                             "normal")
                     }
                     row.addSpacer(10)
-                    console.log(total.pct24h)
                     image(row,
                         (total.pct24h) ? "arrow.up.forward.circle.fill" : "arrow.down.forward.circle.fill",
                         32,
@@ -352,16 +351,7 @@ async function createWidget(data, total) {
                             let row = col.addStack();
                             row.layoutHorizontally()
                             text(row,
-                                "_____🔝 12 COINS ",
-                                10,
-                                "normal")
-                            image(row,
-                                "clock.arrow.circlepath",
-                                10,
-                                "normal")
-                            row.addSpacer(1)
-                            text(row,
-                                "24H ______",
+                                "_____🔝 12 COINS PRICE_______",
                                 10,
                                 "normal")
                         }
@@ -392,7 +382,7 @@ async function createWidget(data, total) {
                                         col.addSpacer(ENV.spacing)
                                         // Value
                                         text(col,
-                                            Per.formatWithSign(0.01 * data[i]['CHANGEPCT24HOUR']),
+                                            Num.format(data[i]['PRICE']),
                                             8,
                                             (data[i]['CHANGEPCT24HOUR'] >= 0) ? ("green") : ("red"))
                                     }
