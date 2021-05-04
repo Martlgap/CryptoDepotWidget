@@ -189,9 +189,9 @@ async function createWidget(data, total) {
                     let row = col.addStack();
                     row.layoutHorizontally()
                     image(row,
-                        (total.pct24h) ? "arrow.up.forward.circle.fill" : "arrow.down.forward.circle.fill",
+                        (total.pct24h >= 0) ? "arrow.up.forward.circle.fill" : "arrow.down.forward.circle.fill",
                         32,
-                        ((total.pct24h) ? "green" : "red"))
+                        ((total.pct24h >= 0) ? "green" : "red"))
                     row.addSpacer(2)
                     {// Texts
                         let col = row.addStack();
@@ -199,12 +199,12 @@ async function createWidget(data, total) {
                         text(col,
                             Num.formatWithSign(total.c24h),
                             14,
-                            ((total.pct24h) ? "green" : "red"))
+                            ((total.pct24h >= 0) ? "green" : "red"))
                         col.addSpacer(2)
                         text(col,
                             Per.formatWithSign(total.pct24h),
                             8,
-                            ((total.pct24h) ? "green" : "red"))
+                            ((total.pct24h >= 0) ? "green" : "red"))
                     }
                     row.addSpacer(2)
                     {//24H Symbol
@@ -308,9 +308,9 @@ async function createWidget(data, total) {
                     }
                     row.addSpacer(10)
                     image(row,
-                        (total.pct24h) ? "arrow.up.forward.circle.fill" : "arrow.down.forward.circle.fill",
+                        (total.pct24h >= 0) ? "arrow.up.forward.circle.fill" : "arrow.down.forward.circle.fill",
                         32,
-                        ((total.pct24h) ? "green" : "red"))
+                        ((total.pct24h >= 0) ? "green" : "red"))
                     row.addSpacer(10)
                     {// Texts
                         let col = row.addStack();
@@ -318,12 +318,12 @@ async function createWidget(data, total) {
                         text(col,
                             Num.formatWithSign(total.c24h),
                             14,
-                            ((total.pct24h) ? "green" : "red"))
+                            ((total.pct24h >= 0) ? "green" : "red"))
                         col.addSpacer(2)
                         text(col,
                             Per.formatWithSign(total.pct24h),
                             8,
-                            ((total.pct24h) ? "green" : "red"))
+                            ((total.pct24h >= 0) ? "green" : "red"))
                     }
                     row.addSpacer(10)
                     {//24H Symbol
