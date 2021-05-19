@@ -1,4 +1,4 @@
-// Version 0.2
+// Version 0.3
 // Author: Martin Knoche
 
 const USDorEUR = "EUR"  // Your preferred currency to show values EUR or USD
@@ -270,8 +270,6 @@ async function createWidget(data, total) {
         }
             break;
         case "medium": {
-            data = sort_filter(data, 'CHANGEPCT24HOUR')
-            let data2 = sort_filter(data, 'PROFITPCT')
             {// TOP ################
                 // Title
                 const row = frame.addStack();
@@ -351,7 +349,7 @@ async function createWidget(data, total) {
                             let row = col.addStack();
                             row.layoutHorizontally()
                             text(row,
-                                "_____🔝 12 COINS PRICE_______",
+                                "_______________🔝 16 COINS PRICE_________________",
                                 10,
                                 "normal")
                         }
@@ -359,7 +357,7 @@ async function createWidget(data, total) {
                         {// Make Sub Tables
                             let row = col.addStack();
                             row.layoutHorizontally()
-                            for (let j = 0; j < Math.floor(((data.length > 12) ? 12 : data.length) / ENV.num_rows); j++) {
+                            for (let j = 0; j < Math.floor(((data.length > 16) ? 16 : data.length) / ENV.num_rows); j++) {
                                 row.addSpacer(2)
                                 let row2 = row.addStack();
                                 row2.layoutHorizontally()
@@ -386,52 +384,6 @@ async function createWidget(data, total) {
                                             8,
                                             (data[i]['CHANGEPCT24HOUR'] >= 0) ? ("green") : ("red"))
                                     }
-                                }
-                            }
-                        }
-                    }
-                    row.addSpacer(2)
-                    {// TOP4 PROFIT COINS
-                        let col = row.addStack();
-                        col.layoutVertically()
-                        //HEADER
-                        text(col,
-                            "______🔝 4 PROFIT______",
-                            10,
-                            "normal")
-                        let row2 = col.addStack();
-                        row2.layoutHorizontally()
-                        {
-                            let col = row2.addStack();
-                            col.layoutVertically()
-                            for (let i = 0; i < ENV.num_rows; i++) {
-                                col.addSpacer(ENV.spacing)
-                                // Coin
-                                text(col,
-                                    data2[i]['CURRENCY'],
-                                    8,
-                                    "gray")
-                            }
-                        }
-                        {
-                            let col = row2.addStack();
-                            col.layoutVertically()
-                            for (let i = 0; i < ENV.num_rows; i++) {
-                                col.addSpacer(ENV.spacing)
-                                {
-                                    let row = col.addStack();
-                                    row.layoutHorizontally()
-                                    // Value
-                                    text(row,
-                                        Num.formatWithSign(data2[i]['PROFIT']),
-                                        8,
-                                        "normal")
-                                    row.addSpacer(2)
-                                    // Value
-                                    text(row,
-                                        "( " + Per.formatWithSign(0.01 * data2[i]['PROFITPCT']) + " )",
-                                        8,
-                                        "normal")
                                 }
                             }
                         }
