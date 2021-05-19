@@ -3,7 +3,7 @@ A JavaScript for Scriptable, showing your personal crypto-balances in a widget!
 
 [![Last Commit](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)](https://img.shields.io/github/last-commit/martlgap/CryptoWidget)
 [![License](https://img.shields.io/badge/license-CC0-blue)](https://img.shields.io/badge/license-CC0-blue)
-[![Version](https://img.shields.io/badge/version-0.2-purple)](https://img.shields.io/badge/version-0.1-purple)
+[![Version](https://img.shields.io/badge/version-0.3-purple)](https://img.shields.io/badge/version-0.3-purple)
 [![License](https://img.shields.io/badge/plugin-scriptable-blue)](https://img.shields.io/badge/plugin-scriptable-blue)
 
 
